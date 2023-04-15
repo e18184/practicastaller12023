@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    Hola {{nombre}} esto es una prueba completa 14-4-2023
+    Hola {{nombre}} esto es una prueba completa 14-4-2023 a hrs 23:17
      tu grado es : {{grado}}
      contador : {{contador}} <button v-on:click="stopInterval">Detener</button>
     <img alt="Vue logo" src="./assets/logo.png">
