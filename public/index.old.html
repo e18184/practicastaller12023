@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+  </head>
+  <body>
+    <div id="app">
+     Hola {{nombre}}
+     tu grado es : {{grado}}
+     los meses son {{meses}}
+
+    </div>
+    <div id="app2" >
+      Hola {{nombre}} como
+      contador : {{contador}}
+    </div>
+    <script src="https://unpkg.com/vue@next"></script>
+    <script>
+      const holaMundo ={
+        data() {
+          return{ nombre:'Richard',
+                  grado:'maestria',
+                  meses: ['enero','febrero','marzo','abril','mayo'],
+                  contador: 0
+        },
+        mounted() 
+        {
+         setInterval(()=> {
+          this.contador ++; 
+         },1000);
+         
+        }
+      }
+    }
+    var mountedApp = Vue.createApp(holaMundo).mount('#app')
+    var mountedApp = Vue.createApp(holaMundo).mount('#app2')
+
+
+    </script>
+
+
+  </body>
+
+</html>
