@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     Hola {{nombre}} esto es una prueba completa 14-4-2023 a hrs 23:17 esto se creo con el branch 14-4-2023
-    el grado es importante
+    ESTE ES EL CODIGO DEL DIA 17-4-2023
      tu grado es : {{grado}}
      contador : {{contador}} <button v-on:click="stopInterval">Detener</button>
     <img alt="Vue logo" src="./assets/logo.png">
