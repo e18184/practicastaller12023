@@ -18,6 +18,11 @@ import ProcesosAdicionar from '../views/procesos/adicionar.vue'
 import ProcesosEditar from '../views/procesos/Editar.vue'
 import ProcesosAsignar from '../views/procesos/asignar.vue'
 
+/** prueba */
+import Prueba from '../views/prueba/prueba.vue'
+import PruebaOrigen from '../views/prueba/origen.vue'
+import PruebaDestino from '../views/prueba/destino.vue'
+
 Vue.use(VueRouter)
 
 const routes = [
@@ -76,6 +81,20 @@ const routes = [
     path: '/procesosasignar',
     name: 'ProcesosAsignar',
     component: ProcesosAsignar
+  }, {
+    /** Con que nombre se va a visualizar en la Url */
+    path:'/prueba',
+    name: 'Prueba',
+    /**Hago referencia al nombre del componente */
+    component: Prueba
+  }, {
+    path: '/pruebaorigen',
+    name: 'pruebaorigen',
+    component: PruebaOrigen
+  }, {
+    path: '/pruebadestino',
+    name: 'pruebadestino',
+    component: PruebaDestino
   }
   
 ]
